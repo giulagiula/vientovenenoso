@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!--
+
+𖦹 obra digital para la muestra de feli + guille
+        "cómo harás para escapar del viento venenoso y poder soñar?"
+𖦹 hecha por giula, a mano, con ayuda de claude para cuando no quedó otra que usar más que html_css
+𖦹 hecha para desktop, más especificamente para pantallas de 3456x2234ppi :( pero :)
+𖦹 se drifruta con tiempo, paciencia, moviéndose lentamente con el mouse, clickeando todo, y con los pop-ups habilitados
+
+-->
 <html lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap" rel="stylesheet">
 </html>
-<link rel="icon" type="image/png" href="COMPLETAR">
+<link rel="icon" type="image/png" href="material/favicon-01.png">
 <body>
     <span class="about" onclick="event.stopPropagation(); alert('obra virtual hecha a mano para feli + guille x giula __ hecha para desktop, habilitar los pop-ups __ para descubrir lo escondido: pasar el mouse por todos, apretar crtl/cmd+a');">
     ???????
@@ -19,7 +28,23 @@
 
     <div class="halves">
         <div class="left">
-            <p class="title"></p>
+
+            <!-- chat -->
+
+            <div id="chat-mensajes"></div>
+
+            <form id="form"> 
+                <div>
+                    <input type="text" placeholder="nombre" name="nombre" required></input>
+                </div>
+                <div>
+                    <textarea name="mensaje" placeholder="un mensaje, un sueño, un veneno" rows="4" cols="37" required></textarea>
+                </div>
+                <div class="submit">
+                    <button type="submit" value="enviar">enviar</button> 
+                </div>  
+            </form>
+
         </div>
 
         <div class="right">
@@ -31,7 +56,7 @@
 
             <span id="typewriter-01" class="typewriter" data-delay="4000">la protagonista aparece en una oficina mientras la retan por robarse una botella de vino</span>
 
-            <span id="typewriter-02" class="typewriter" data-delay="0">nunca importa que el tiempo corra, todo momento es válido para caminar la ciudad porque todo es un presente absoluto</span>
+            <span id="typewriter-02" class="typewriter flicker" data-delay="0">nunca importa que el tiempo corra, todo momento es válido para caminar la ciudad porque todo es un presente absoluto</span>
 
             <span id="fixed-02" class="fixed fixed-delayed">qué lindo es recordar esos maquillajes con tanto contraste, full sombras coloridad y fuertes. me gustan los colores, no se usa tanto ahora</span>
 
@@ -290,5 +315,6 @@
         <p>me levantaba de mi cama y me iba al patio para ir al baño, estaba alejado, y me encontraba con una bruja que me quería comer con mosgtaza :////// recuedo el miedooo pero lo que más me sorprende es el poder del cerebero de recordarlo por tanto tiempo</p>
         <label for="dream2" class="close">cerrar</label>
         </div>
-    <script src="script.js"></script>
+
+    <script type="module" src="script.js"></script>
 </body>
