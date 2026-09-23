@@ -73,7 +73,7 @@
     flex-direction: column;
     gap: 8px;
     padding: 8px 8px 20px 0;
-    max-width: 320px;
+    max-width: 340px;
 }
 
 #form div {
@@ -176,7 +176,7 @@ button[type="submit"]:hover {
 
 #fixed-07 {
     top: 66%;
-    left: 74%;
+    left: 71%;
     animation-delay: 24s;
 }
 
