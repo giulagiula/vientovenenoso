@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frase {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    fill: #e85aa0;
+}
+
+.espiral {
+    width: 100vmin;
+    height: 100vmin;
+    max-width: 900px;
+    max-height: 900px;
+}
+
+.button {
+    font-family: "Manufacturing Consent";
+    font-size: 24px;
+    color: #e85aa0;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #efefef;
+    border: 2px solid #767676;
+    border-radius: 4px;
+    padding: 4px 8px;
+    z-index: 10;
+}
+
+.button:hover {
+    background-color: #EEFE3F;
+    border: 2px solid #bece0d;
+}
+
+.loose-btn {
+    position: absolute;
+    top: 42%;
+    right: 16%;
+    z-index: 10;
+    cursor: pointer;
+    font-family: monospace;
+    background-color: #186ED9;
+    color: #ffffff;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 400px;
+    background-color: #ffffff;
+    z-index: 20;
+}
+
+#que:checked ~ .que { display: block; }
+
+.que {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#definicion:checked ~ .definicion { display: block; }
+
+.definicion {
+    top: 58%;
+    left: 45%;
+    z-index: 21;
+}
+
+.definicion-btn {
+    cursor: pointer;
+    color: #e85aa0;
+    text-decoration: underline;
+}
+
+.close {
+    cursor: pointer;
+    color: #6495ed;
+    background-color: #ff6347;
+    font-family: monospace;
+}

@@ -628,7 +628,7 @@ button[type="submit"]:hover {
     border: 2px outset #d3d3d3;
     font-family: system-ui, sans-serif;
     font-size: 13px;
-    color: #0000;
+    color: #000;
     cursor: pointer;
 }
 
