@@ -1,0 +1,146 @@
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.loose-btn {
+    position: absolute;
+    top: 32%;
+    left: 6%;
+    z-index: 10;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 30px;
+    color: #EEFE3F;
+    filter: drop-shadow(10px 10px 1px #bbca1a);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 400px;
+    background-color: #ffffff;
+    z-index: 20;
+}
+
+.popup img {
+    max-width: 100%;
+    height: auto;
+}
+
+#act:checked ~ .act { display: block; }
+
+.act1 { 
+    top: 37%; 
+    left: 10%; 
+}
+.act2 { 
+    top: 2%; 
+    left: 5%; 
+    width: 200px;
+}
+.act3 { 
+    top: 62%; 
+    left: 1%; 
+}
+.act4 { 
+    top: 40%; 
+    left: 76%; 
+}
+.act5 { 
+    top: 1%; 
+    left: 72%; 
+}
+.act6 { 
+    top: 55%; 
+    left: 50%; 
+}
+
+#act:checked ~ .act1 { display: block; }
+#act:checked ~ .act2 { display: block; }
+#act:checked ~ .act3 { display: block; }
+#act:checked ~ .act4 { display: block; }
+#act:checked ~ .act5 { display: block; }
+#act:checked ~ .act6 { display: block; }
+
+.sorpresas-btn {
+    cursor: pointer;
+    color: #e85aa0;
+    text-decoration: underline;
+}
+
+#sorpresas:checked ~ .sorpresas { display: block; }
+
+.sorpresas1 {
+    top: 45%;
+    left: 30%;
+    z-index: 21;
+    background-color: #e85aa0;
+    color: #bbca1a;
+    width: fit-content;
+}
+.sorpresas2 {
+    top: 4%;
+    left: 18%;
+    width: 270px;
+    z-index: 21;
+    background-color: #e85aa0;
+    color: #bbca1a;
+}
+.sorpresas3 {
+    top: 65%;
+    left: 34%;
+    z-index: 21;
+    background-color: #e85aa0;
+    color: #bbca1a;
+    width: fit-content;
+}
+.sorpresas4 {
+    top: 2%;
+    left: 64%;
+    z-index: 21;
+    width: 500px;
+    background-color: transparent;
+}
+.sorpresas5 {
+    top: 53%;
+    left: 1%;
+    z-index: 21;
+    width: 500px;
+    background-color: transparent;
+}
+.sorpresas6 {
+    top: 45%;
+    left: 71%;
+    z-index: 21;
+    width: 500px;
+    background-color: transparent;
+}
+
+#sorpresas:checked ~ .sorpresas1 { display: block; }
+#sorpresas:checked ~ .sorpresas2 { display: block; }
+#sorpresas:checked ~ .sorpresas3 { display: block; }
+#sorpresas:checked ~ .sorpresas4 { display: block; }
+#sorpresas:checked ~ .sorpresas5 { display: block; }
+#sorpresas:checked ~ .sorpresas6 { display: block; }
+
+.close {
+    cursor: pointer;
+    color: #6495ed;
+    background-color: #ff6347;
+    font-family: monospace;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+.flicker {
+    animation: flicker 2s infinite;
+}
