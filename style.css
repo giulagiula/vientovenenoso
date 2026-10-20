@@ -31,6 +31,18 @@
     color: #ffffff;
 }
 
+.flyer{
+    position: fixed;
+    bottom: 32px;
+    right: 8px;
+    z-index: 100;
+    cursor: pointer;
+    font-family: monospace;
+    background-color: #186ED9;
+    color: #ffffff;
+}
+
+
 .halves{
     display: flex;
     width: 100vw;
@@ -137,25 +149,25 @@ button[type="submit"]:hover {
 #fixed-01 {
     top: 10%;
     left: 15%;
-    animation-delay: 10s;
+    animation-delay: 40s;
 }
 
 #fixed-02 {
     top: 43%;
     left: 40%;
-    animation-delay: 20s;
+    animation-delay: 60s;
 }
 
 #fixed-03 {
     top: 78%;
     left: 15%;
-    animation-delay: 34s;
+    animation-delay: 80s;
 }
 
 #fixed-04 {
     top: 74%;
     left: 68%;
-    animation-delay: 4s;
+    animation-delay: 90s;
 }
 
 #fixed-05 {
@@ -163,7 +175,7 @@ button[type="submit"]:hover {
     left: 20%;
     color: #EEFE3F;
     filter: drop-shadow(10px 10px 1px #bbca1a);
-    animation-delay: 16s;
+    animation-delay: 100s;
 }
 
 #fixed-06 {
@@ -171,13 +183,13 @@ button[type="submit"]:hover {
     left: 1%;
     color: #EEFE3F;
     filter: drop-shadow(10px 10px 1px #bbca1a);
-    animation-delay: 18s;
+    animation-delay: 120s;
 }
 
 #fixed-07 {
     top: 66%;
     left: 71%;
-    animation-delay: 24s;
+    animation-delay: 160s;
 }
 
 #fixed-08 {
@@ -189,57 +201,57 @@ button[type="submit"]:hover {
 #fixed-09 {
     top: 38%;
     left: 70%;
-    animation-delay: 20s;
+    animation-delay: 140s;
 }
 
 #fixed-10 {
     top: 52.8%;
     left: 60%;
     color: #ff69b4;
-    animation-delay: 12s;
+    animation-delay: 100s;
 }
 
 #fixed-11 {
     top: 36%;
     left: 72%;
     color: #ff69b4;
-    animation-delay: 10s;
+    animation-delay: 60s;
 }
 
 #fixed-12 {
     top: 82%;
     left: 74%;
-    animation-delay: 10s;
+    animation-delay: 70s;
 }
 
 #fixed-13 {
     top: 58%;
     left: 44%;
-    animation-delay: 8s;
+    animation-delay: 70s;
 }
 
 #fixed-14 {
     top: 68%;
     left: 68%;
-    animation-delay: 2s;
+    animation-delay: 200s;
 }
 
 #fixed-15 {
     top: 8%;
     left: 45%;
-    animation-delay: 4s;
+    animation-delay: 120s;
 }
 
 #fixed-16 {
     top: 80%;
     left: 64%;
-    animation-delay: 12s;
+    animation-delay: 60s;
 }
 
 #fixed-17 {
     top: 5%;
     left: 10%;
-    animation-delay: 16s;
+    animation-delay: 180s;
 }
 
 #fixed-18 {
@@ -434,7 +446,7 @@ button[type="submit"]:hover {
 }
 
 #hover-09 {
-    top: 70%;
+    top: 74%;
     left: 36%;
 }
 

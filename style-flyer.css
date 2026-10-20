@@ -1,64 +1,89 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stage {
+    position: relative;
+    height: 100vh;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    font-size: 1.6vh;
+}
+
 .bg {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
 }
 
 .loose-btn {
     position: absolute;
-    top: 32%;
-    left: 6%;
+    top: 45%;
+    left: 2%;
     z-index: 10;
     cursor: pointer;
     font-family: monospace;
     font-size: 30px;
-    color: #EEFE3F;
-    filter: drop-shadow(10px 10px 1px #bbca1a);
+    color: #6495ed;
+    text-shadow: 10px 10px 3px #8da2ca;
+    padding: 8px;
+    border: 4px dotted #bbca1a;
+    border-radius: 100%;
 }
 
 .popup {
     display: none;
-    position: fixed;
-    width: 400px;
+    position: absolute;
+    width: 50%;
     background-color: #ffffff;
     z-index: 20;
 }
 
 .popup img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
 #act:checked ~ .act { display: block; }
 
 .act1 { 
-    top: 37%; 
-    left: 10%; 
+    top: 34%; 
+    left: 6%;
+    background-color: #ffffff;
 }
 .act2 { 
-    top: 2%; 
-    left: 5%; 
-    width: 200px;
+    top: 1%; 
+    left: 0%; 
+    width: 150px;
+    background-color: transparent;
 }
 .act3 { 
-    top: 62%; 
-    left: 1%; 
+    top: 78%; 
+    left: 2%;
+    width: 230px;
+    background-color: transparent;
 }
 .act4 { 
-    top: 40%; 
-    left: 76%; 
+    top: 54%; 
+    left: 65%;
+    background-color: transparent; 
 }
 .act5 { 
-    top: 1%; 
-    left: 72%; 
+    top: 54%; 
+    left: 4%;
+    background-color: transparent;
 }
 .act6 { 
-    top: 55%; 
-    left: 50%; 
+    top: 8%; 
+    left: 57%;
+    background-color: transparent;
 }
 
 #act:checked ~ .act1 { display: block; }
@@ -77,48 +102,74 @@
 #sorpresas:checked ~ .sorpresas { display: block; }
 
 .sorpresas1 {
-    top: 45%;
-    left: 30%;
-    z-index: 21;
+    top: 44%;
+    left: 50%;
+    z-index: 100;
     background-color: #e85aa0;
     color: #bbca1a;
     width: fit-content;
+    font-size: 30px;
 }
 .sorpresas2 {
-    top: 4%;
-    left: 18%;
-    width: 270px;
+    top: 0.5%;
+    left: 1%;
+    z-index: 100;
+    width: 400px;
+    white-space: nowrap;
     z-index: 21;
     background-color: #e85aa0;
     color: #bbca1a;
+    font-size: 30px;
 }
 .sorpresas3 {
     top: 65%;
-    left: 34%;
-    z-index: 21;
+    left: 50%;
+    z-index: 100;
     background-color: #e85aa0;
     color: #bbca1a;
     width: fit-content;
+    font-size: 30px;
 }
 .sorpresas4 {
-    top: 2%;
-    left: 64%;
+    top: 10%;
+    left: 60%;
     z-index: 21;
-    width: 500px;
+    width: 250px;
     background-color: transparent;
 }
 .sorpresas5 {
-    top: 53%;
-    left: 1%;
+    top: 77%;
+    left: 40%;
     z-index: 21;
-    width: 500px;
+    width: 250px;
     background-color: transparent;
 }
 .sorpresas6 {
-    top: 45%;
-    left: 71%;
+    top: 50%;
+    left: 6%;
     z-index: 21;
-    width: 500px;
+    width: 250px;
+    background-color: transparent;
+}
+.sorpresas8 {
+    top: 12%;
+    left: 6%;
+    z-index: 21;
+    width: 200px;
+    background-color: transparent;
+}
+.sorpresas9 {
+    top: 26%;
+    left: 80%;
+    z-index: 100;
+    width: 200px;
+    background-color: transparent;
+}
+.sorpresas10 {
+    top: 70%;
+    left: 10%;
+    z-index: 21;
+    width: 200px;
     background-color: transparent;
 }
 
@@ -128,12 +179,18 @@
 #sorpresas:checked ~ .sorpresas4 { display: block; }
 #sorpresas:checked ~ .sorpresas5 { display: block; }
 #sorpresas:checked ~ .sorpresas6 { display: block; }
+#sorpresas:checked ~ .sorpresas8 { display: block; }
+#sorpresas:checked ~ .sorpresas9 { display: block; }
+#sorpresas:checked ~ .sorpresas10 { display: block; }
 
 .close {
     cursor: pointer;
     color: #6495ed;
     background-color: #ff6347;
     font-family: monospace;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1;
 }
 
 @keyframes flicker {
